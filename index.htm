@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>SassAssignment</title>
+      <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+   </head>
+   <body>
+      <div class="container">
+<!-- Navigation bar starts here -->
+         <div class="row nav">
+           <div class="col-6">
+               <ul class="navi" >
+                  <li class="navi direct_0">...</li>
+                  <li class="navi direct_1">Administration ></li>
+                  <li class="navi direct_2"> User Management ></li>
+                  <li class="navi direct_3"> Create New User</li>
+               </ul>
+            </div>
+            <div class="col-4">
+               <div class="navcontent">
+                   <select class="buttonNav" >
+                    <option value="Create New">Create New</option>
+                     <option value="HR" class="option1">HR</option>
+                      <option value="IT" class="option2">IT</option>
+                     <option value="ADMIN" class="option3">ADMIN</option>
+		</select>
+                  <ul class="logos">
+                     <li class="logo_1"></li>
+                     <li class="logo_2"></li>
+                     <li class="logo_3"></li>
+                     <li class="logo_4"></li>
+                  </ul>
+               </div>
+            </div>
+       </div>
+<!-- Navigation bar ends here -->
+<!--Side Navigation bar starts here -->
+ <div class="row section">
+         <div class="col-1 sideNavigation">
+            <ul class="logos2">
+               <li class="logos_1"></li>
+               <li class="logos_2"></li>
+               <li class="logos_3"></li>
+               <li class="logos_4"></li>
+               <li class="logos_5"></li>
+            </ul>
+         </div>
+<!--Side Navigation bar ends here -->
+        <!-- Main content(form) starts here -->
+            <div class="col-11">
+             <div class="maincontent">
+               <div class="heading">
+                  <h2 >Create New User</h2>
+               </div>
+               <hr class="underLine">
+               
+                  <table>
+                     <tr>
+                        <td class="labels" >First Name</td>
+                        <td><input type="text"  placeholder="Name" class="inputs"/>
+                        <td class="labels" >Last Name</td>
+                        <td><input type="text"  placeholder="Name" class="inputs" />
+                     </tr>
+                     <tr>
+                        <td class="labels" >Email</td>
+                        <td><input type="text" placeholder="Email" class="inputs" /><span class="mandatory">*</span></td>
+                        <td class="labels">Role</td>
+                        <td>
+                           <select class="inputs dropdown">
+                              <option value="Select Role">Select Role</option>
+                              <option value="HR">HR</option>
+                              <option value="TL">TL</option>
+                              <option value="SA">SA</option>
+                           </select><span class="mandatory">*</span>
+                     </tr>
+                     <tr>
+                        <td class="labels">User Status</td>
+                        <td ><input type="radio" name="active" value="Active"  checked="checked"><label class="radios" for="active">Active</label>
+                           <input type="radio" name="active" value="Active"><label  class="radios">Inactive</label>
+                        </td>
+                     </tr>
+                  </table>
+                     <br><br><br>
+                  <div class="createUser">
+                     <input type="button" value="Cancel" class="cancelButton"/>
+                     <input type="button" value="Create User" class="createButton"/>
+                  </div>
+              </div>
+            </div>
+         </div></div>
+      <!-- Main content(form) ends here -->
+   </body>
+</html>
